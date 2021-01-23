@@ -42,7 +42,7 @@ Temperature:
 
 **eBird Abundance Map**
 <video width="640" height="480" controls>
-   <source src="videos/bkcchi-abundance-map-weekly-2019-en.mp4" type="video/mp4">
+   <source src="field-work/bkcchi-abundance-map-weekly-2019-en.mp4" type="video/mp4">
 </video>
 
 **eBird Recording**

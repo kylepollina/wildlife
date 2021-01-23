@@ -181,7 +181,7 @@ Huge honker. Famalies starting to move south as the summer nears its end.
 |  2020-08-22 | 8     |
 
 <video width="640" height="480" controls>
-   <source src="videos/cangoo-abundance-map-weekly-2019-en.mp4" type="video/mp4">
+   <source src="field-work/videos/cangoo-abundance-map-weekly-2019-en.mp4" type="video/mp4">
 </video>
 
 [Canada Goose Status & Trends - eBird.org](https://ebird.org/science/status-and-trends/cangoo)
@@ -216,7 +216,7 @@ Common bird with a great whistle.
 
 **eBird Abundance Map**
 <video width="640" height="480" controls>
-   <source src="videos/norcar-abundance-map-weekly-2019-en.mp4" type="video/mp4">
+   <source src="field-work/videos/norcar-abundance-map-weekly-2019-en.mp4" type="video/mp4">
 </video>
 
 **eBird Recording**
@@ -239,7 +239,7 @@ around now in August. Many different songs and calls.
 
 **eBird Abundance Map**
 <video width="640" height="480" controls>
-   <source src="videos/amerob-abundance-map-weekly-2019-en.mp4" type="video/mp4">
+   <source src="field-work/videos/amerob-abundance-map-weekly-2019-en.mp4" type="video/mp4">
 </video>
 
 **eBird Recording**
@@ -262,7 +262,7 @@ Seen mostly in the early evenings.
 
 **eBird Abundance Map**
 <video width="640" height="480" controls>
-   <source src="videos/amegfi-abundance-map-weekly-2019-en.mp4" type="video/mp4">
+   <source src="field-work/videos/amegfi-abundance-map-weekly-2019-en.mp4" type="video/mp4">
 </video>
 
 **eBird Recording**
@@ -322,7 +322,7 @@ Member of the [Icterid](https://en.wikipedia.org/wiki/Icterid) family of blackbi
 
 **eBird Abundance Map**
 <video width="640" height="480" controls>
-   <source src="videos/balori-abundance-map-weekly-2019-en.mp4" type="video/mp4">
+   <source src="field-work/videos/balori-abundance-map-weekly-2019-en.mp4" type="video/mp4">
 </video>
 
 **eBird Recording**
@@ -361,7 +361,7 @@ Males have red feathers on the top of their heads, females do not.
 
 **eBird Abundance Map**
 <video width="640" height="480" controls>
-   <source src="videos/dowwoo-abundance-map-weekly-2019-en.mp4" type="video/mp4">
+   <source src="field-work/videos/dowwoo-abundance-map-weekly-2019-en.mp4" type="video/mp4">
 </video>
 
 **eBird Recording**
@@ -387,7 +387,7 @@ as a red-tailed hawk since they are the most common it seems, but I am not sure.
 
 **eBird Abundance Map**
 <video width="640" height="480" controls>
-   <source src="videos/rethaw-abundance-map-weekly-2019-en.mp4" type="video/mp4">
+   <source src="field-work/videos/rethaw-abundance-map-weekly-2019-en.mp4" type="video/mp4">
 </video>
 
 **eBird Recording**
@@ -415,7 +415,7 @@ Wades on the shallow end of the bog, feeds on small fish. Quiet and lonesome.
 
 **eBird Abundance Map**
 <video width="640" height="480" controls>
-   <source src="videos/grbher3-abundance-map-weekly-2019-en.mp4" type="video/mp4">
+   <source src="field-work/videos/grbher3-abundance-map-weekly-2019-en.mp4" type="video/mp4">
 </video>
 
 **eBird Recording**
@@ -451,7 +451,7 @@ By August, the birds seem to have left from Mallards Bog
 
 **eBird Abundance Map**
 <video width="640" height="480" controls>
-   <source src="videos/rewbla-abundance-map-weekly-2019-en.mp4" type="video/mp4">
+   <source src="field-work/videos/rewbla-abundance-map-weekly-2019-en.mp4" type="video/mp4">
 </video>
 
 **eBird Recording**
@@ -482,7 +482,7 @@ families living together
 
 **eBird Abundance Map**
 <video width="640" height="480" controls>
-   <source src="videos/mallar3-abundance-map-weekly-2019-en.mp4" type="video/mp4">
+   <source src="field-work/videos/mallar3-abundance-map-weekly-2019-en.mp4" type="video/mp4">
 </video>
 
 **eBird Recording**
@@ -509,7 +509,7 @@ Sapphire blue bird. Mysterious and elusive in my neighborhood...
 
 **eBird Abundance Map**
 <video width="640" height="480" controls>
-   <source src="videos/blujay-abundance-map-weekly-2019-en.mp4" type="video/mp4">
+   <source src="field-work/videos/blujay-abundance-map-weekly-2019-en.mp4" type="video/mp4">
 </video>
 
 **eBird Recording**
