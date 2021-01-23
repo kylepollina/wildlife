@@ -45,7 +45,7 @@ def build_page(bird_data, output_file):
     html += f'<u><h1>{season}</h1></u>'
 
     for s in ['winter', 'early-spring', 'late-spring', 'summer', 'post-breeding', 'early-fall', 'late-fall']:
-        html += "<a href='https://kylepollina.github.io/earthscience/dbc-checklist/{}/abundant.html'>".format(s)
+        html += "<a href='https://kylepollina.github.io/wildlife/dbc-checklist/{}/abundant.html'>".format(s)
         html += "{}</a>".format(s.replace('-', ' '))
         if s != 'late-fall':
             html += " - "
@@ -54,7 +54,7 @@ def build_page(bird_data, output_file):
     html += "<u><h3>{}</h3></u>".format(abundance.replace('-', ' '))
 
     for abd in ['abundant', 'common', 'fairly-common', 'uncommon', 'rare', 'extremely-rare']:
-        html += "<a href='https://kylepollina.github.io/earthscience/dbc-checklist/{}/{}.html'>".format(season, abd)
+        html += "<a href='https://kylepollina.github.io/wildlife/dbc-checklist/{}/{}.html'>".format(season, abd)
         html += "{}</a>".format(abd.replace('-', ' '))
         if abd != 'extremely-rare':
             html += " - "
