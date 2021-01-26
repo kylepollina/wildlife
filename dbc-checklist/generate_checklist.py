@@ -2,7 +2,6 @@
 # https://www.fnal.gov/cgi-bin/ecology/wildlife/bigbar?Greater+White-fronted+Goose
 
 import pandas as pd
-import math
 
 
 html_start = """
@@ -25,6 +24,7 @@ html_start = """
         <div id="posts">
         <div id="birds">
     <h1>Dupage Birding Club Visual Checklist</h1>
+    view the original checklist here: <a href="https://dupagebirding.org/wp-content/uploads/2020/06/2020_DuPage_Checklist-Combined-3.pdf">DuPage Birding Club Checklist</a>
 """
 
 html_end = """
@@ -50,7 +50,6 @@ def build_page(bird_data, output_file):
         if s != 'late-fall':
             html += " - "
 
-
     html += "<u><h3>{}</h3></u>".format(abundance.replace('-', ' '))
 
     for abd in ['abundant', 'common', 'fairly-common', 'uncommon', 'rare', 'extremely-rare']:
@@ -68,12 +67,18 @@ def build_page(bird_data, output_file):
         html += "<ul>"
         html += "<li><a href='{}'> eBird - {}</a></li>".format(row['ebird'], bird)
         html += "<li><a href='{}'> Wikipedia - {}</a></li>".format(row['wikipedia'], bird)
-        html += "<ul><u>All About Birds - {}</u>".format(bird)
-        html += "<li><a href='{}'>Overview</a></li>".format(row['allaboutbirds'])
-        html += "<li><a href='{}'>ID Info</a></li>".format(row['allaboutbirds'].replace('/overview', '/id'))
-        html += "</ul>"
+        html += "<li><a href='{}'>All About Birds - {}</a></li>".format(row['allaboutbirds'], bird)
+        html += "<ul><li><a href='{}'>ID Info</a></li>".format(row['allaboutbirds'].replace('/overview', '/id'))
+        html += "<li><a href='{}'>Life History</a></li>".format(row['allaboutbirds'].replace('/overview', '/lifehistory'))
+        html += "<li><a href='{}'>Maps</a></li>".format(row['allaboutbirds'].replace('/overview', '/mapsrange'))
+        html += "<li><a href='{}'>Recordings</a></li>".format(row['allaboutbirds'].replace('/overview', '/sounds'))
+        html += "</ul></ul>"
         html += "<h2>Range Map</h2>"
         html += '<a href="{}"><img src="{}" style="width: 75%"/></a>'.format(row['allaboutbirds'].replace('/overview', '/maps-range'), row['migration'])
+        html += "<h2>Fermilab Sighting Chart</h2>"
+        html += "<a href='https://www.fnal.gov/cgi-bin/ecology/wildlife/display?{formatted_name}'><img src='https://www.fnal.gov/cgi-bin/ecology/wildlife/bigbar?{formatted_name}'></a>".format(
+            formatted_name=bird.replace(' ', '+')
+        )
         html += "</details>"
 
         html += "<hr>"
