@@ -70,7 +70,7 @@ def build_page(bird_data, output_file):
         html += "<li><a href='{}'>All About Birds - {}</a></li>".format(row['allaboutbirds'], bird)
         html += "<ul><li><a href='{}'>ID Info</a></li>".format(row['allaboutbirds'].replace('/overview', '/id'))
         html += "<li><a href='{}'>Life History</a></li>".format(row['allaboutbirds'].replace('/overview', '/lifehistory'))
-        html += "<li><a href='{}'>Maps</a></li>".format(row['allaboutbirds'].replace('/overview', '/mapsrange'))
+        html += "<li><a href='{}'>Range Maps</a></li>".format(row['allaboutbirds'].replace('/overview', '/maps-range'))
         html += "<li><a href='{}'>Recordings</a></li>".format(row['allaboutbirds'].replace('/overview', '/sounds'))
         html += "</ul></ul>"
         html += "<h2>Range Map</h2>"
