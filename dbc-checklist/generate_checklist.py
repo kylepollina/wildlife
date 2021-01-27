@@ -24,7 +24,7 @@ html_start = """
         <div id="posts">
         <div id="birds">
     <h1>Dupage Birding Club Visual Checklist</h1>
-    view the original checklist here: <a href="https://dupagebirding.org/wp-content/uploads/2020/06/2020_DuPage_Checklist-Combined-3.pdf">DuPage Birding Club Checklist</a>
+    View the checklist: <a href="https://dupagebirding.org/wp-content/uploads/2020/06/2020_DuPage_Checklist-Combined-3.pdf">DuPage Birding Club Checklist</a>
 """
 
 html_end = """
