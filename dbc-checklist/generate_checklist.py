@@ -60,7 +60,28 @@ def build_page(bird_data, output_file):
 
     for bird, row in bird_data.iterrows():
         html += f"<h1>{bird}</h1>"
-        html += '<img src="{}" />'.format(row['img']) if isinstance(row['img'], str) else ''
+
+        if isinstance(row['img'], str):
+            html += '<img src="{}" />'.format(row['img']) if isinstance(row['img'], str) else ''
+        else:
+            html += '<table width="100%">'
+            html += '<col style="width:50%">'
+            html += '<col style="width:50%">'
+            html += '<thead>'
+            html += '<tr>'
+            html += '<th align="left">Female</th>'
+            html += '<th align="left">Male</th>'
+            html += '</tr>'
+            html += '</thead>'
+            html += '<tbody>'
+            html += '<tr>'
+            html += '<td align="left"><img alt="" src="{}" /></td>'.format(row['female'])
+            html += '<td align="left"><img alt="" src="{}" /></td>'.format(row['male'])
+            html += '</tr>'
+            html += '</tbody>'
+            html += '</table>'
+            html += ''
+
         html += row['recording_embed_link']
 
         html += "<details><summary>More Information</summary>"
