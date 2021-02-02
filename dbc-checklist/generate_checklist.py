@@ -69,7 +69,7 @@ def build_page(bird_data: pd.DataFrame, output_file: str, all_bird_page: bool = 
         html += f"<h1>{bird}</h1>"
 
         if isinstance(row['img'], str):
-            html += '<img src="{}" loading="lazy">'.format(row['img']) if isinstance(row['img'], str) else ''
+            html += '<a href="{img}"><img src="{img}" loading="lazy"></a>'.format(img=row['img']) if isinstance(row['img'], str) else ''
         else:
             html += '<table width="100%">'
             html += '<col style="width:50%">'
@@ -82,8 +82,8 @@ def build_page(bird_data: pd.DataFrame, output_file: str, all_bird_page: bool = 
             html += '</thead>'
             html += '<tbody>'
             html += '<tr>'
-            html += '<td align="left"><img alt="" src="{}" loading="lazy"></td>'.format(row['female'])
-            html += '<td align="left"><img alt="" src="{}" loading="lazy"></td>'.format(row['male'])
+            html += '<td align="left"><a href="{img}"><img alt="" src="{img}" loading="lazy"></a></td>'.format(img=row['female'])
+            html += '<td align="left"><a href="{img}"><img alt="" src="{img}" loading="lazy"></a></td>'.format(img=row['male'])
             html += '</tr>'
             html += '</tbody>'
             html += '</table>'
