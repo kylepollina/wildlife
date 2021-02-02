@@ -92,6 +92,33 @@ def build_page(bird_data: pd.DataFrame, output_file: str, all_bird_page: bool = 
         if not all_bird_page:
             html += row['recording_embed_link']
 
+        else:
+            html += "<table>"
+            html += '<thead>'
+            html += '<tr>'
+            html += '<th align="left">Winter</th>' if isinstance(row['winter'], str) else ''
+            html += '<th align="left">Early Spring</th>' if isinstance(row['early spring'], str) else ''
+            html += '<th align="left">Late Spring</th>' if isinstance(row['late spring'], str) else ''
+            html += '<th align="left">Summer</th>' if isinstance(row['summer'], str) else ''
+            html += '<th align="left">Post Breeding</th>' if isinstance(row['post breeding'], str) else ''
+            html += '<th align="left">Early Fall</th>' if isinstance(row['early fall'], str) else ''
+            html += '<th align="left">Late Fall</th>' if isinstance(row['late fall'], str) else ''
+            html += '</tr>'
+            html += '<tbody>'
+            html += '<tr>'
+            html += '<td align="left">{}</td>'.format(row['winter'].split('- ')[-1]) if isinstance(row['winter'], str) else ''
+            html += '<td align="left">{}</td>'.format(row['early spring'].split('- ')[-1]) if isinstance(row['early spring'], str) else ''
+            html += '<td align="left">{}</td>'.format(row['late spring'].split('- ')[-1]) if isinstance(row['late spring'], str) else ''
+            html += '<td align="left">{}</td>'.format(row['summer'].split('- ')[-1]) if isinstance(row['summer'], str) else ''
+            html += '<td align="left">{}</td>'.format(row['post breeding'].split('- ')[-1]) if isinstance(row['post breeding'], str) else ''
+            html += '<td align="left">{}</td>'.format(row['early fall'].split('- ')[-1]) if isinstance(row['early fall'], str) else ''
+            html += '<td align="left">{}</td>'.format(row['late fall'].split('- ')[-1]) if isinstance(row['late fall'], str) else ''
+            html += '</tr>'
+            html += '</tbody>'
+            html += '</thead>'
+            html += '</thead>'
+            html += "</table>"
+
         html += "<details><summary>More Information</summary>"
         html += "<ul>"
         html += "<li><a href='{}'> eBird - {}</a></li>".format(row['ebird'], bird)

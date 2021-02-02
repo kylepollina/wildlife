@@ -21,6 +21,8 @@ a       {text-decoration: none;  color: #CE2029;}
 a:hover {text-decoration: underline;}
 hr      {color: rgb(255, 255, 255);}
 
+th, td { padding: 10px; }
+
 #main    {margin-top: 60px;}
 #footer  {text-align: center;}
 #content {float: left;  width: calc(100% - var(--nav-width));  height: 100%;  margin-left: calc(var(--nav-width) + 20px);  padding-top: 0px;  padding-bottom: 40px;}
