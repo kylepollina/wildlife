@@ -21,15 +21,17 @@ html_start = """
   </head>
   <body>
     <div id="container">
-        <div id="posts">
+      <div id="posts">
         <div id="birds">
-    <h1>Dupage Birding Club Visual Checklist</h1>
-    View the checklist: <a href="https://dupagebirding.org/wp-content/uploads/2020/06/2020_DuPage_Checklist-Combined-3.pdf">DuPage Birding Club Checklist</a>
+          <h1>Dupage Birding Club Visual Checklist</h1>
+          View the checklist: <a href="https://dupagebirding.org/wp-content/uploads/2020/06/2020_DuPage_Checklist-Combined-3.pdf">DuPage Birding Club Checklist</a><br>
+          Download the dataset: <a href="dbc_checklist.csv">Checklist download</a><br>
+          <a href="https://kylepollina.github.io/wildlife/dbc-checklist/">Main page</a>
 """
 
 html_end = """
-    </div>
-    </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
