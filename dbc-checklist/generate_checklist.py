@@ -14,7 +14,7 @@ html_start = """
 
     <!-- CSS -->
 
-    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../../https://kylepollina.github.io/styles.css">
     <!-- Fonts -->
 
     <title></title>
@@ -43,7 +43,7 @@ def build_page(bird_data: pd.DataFrame, output_file: str, all_bird_page: bool = 
     html = html_start
 
     if all_bird_page:
-        html = html.replace('../../styles.css', '../styles.css')
+        html = html.replace('../../https://kylepollina.github.io/styles.css', '../styles.css')
 
     else:
         season, abundance = output_file.split('/')
