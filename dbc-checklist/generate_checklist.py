@@ -14,7 +14,7 @@ html_start = """
 
     <!-- CSS -->
 
-    <link rel="stylesheet" href="../../https://kylepollina.github.io/styles.css">
+    <link rel="stylesheet" href="https://kylepollina.github.io/styles.css">
     <!-- Fonts -->
 
     <title></title>
