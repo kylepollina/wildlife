@@ -121,6 +121,10 @@ def build_page(bird_data: pd.DataFrame, output_file: str, all_bird_page: bool = 
 
         html += "<details><summary>More Information</summary>"
         html += "<ul>"
+        
+        if bird == 'Bald Eagle':
+            html += "<li><a href='https://wizardpins.com/blogs/education/all-about-bald-eagles'> All About Bald Eagles!</a> <br>(Suggested by Chelsea, Sarah, Jarod, and Erin. Thank you!!) </li>"
+        
         html += "<li><a href='{}'> eBird - {}</a></li>".format(row['ebird'], bird)
         html += "<li><a href='{}'> Wikipedia - {}</a></li>".format(row['wikipedia'], bird)
         html += "<li><a href='{}'>All About Birds - {}</a></li>".format(row['allaboutbirds'], bird)
